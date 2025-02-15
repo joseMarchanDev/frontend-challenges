@@ -4,4 +4,4 @@
 
 ## Lista de Retos
 
-1. [CV en HTML](challenges/single-page-cv) - Estructura básica de un CV usando solo HTML.
+1. [CV en HTML](https://github.com/joseMarchanDev/frontend-challenges/challenges/single-page-cv) - Estructura básica de un CV usando solo HTML.
