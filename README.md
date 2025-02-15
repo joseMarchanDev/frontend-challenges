@@ -4,6 +4,4 @@
 
 ## Lista de Retos
 
-1. [CV en HTML](/challenges/cv-html) - Estructura básica de un CV usando solo HTML.
-2. [Landing Page Responsive](/challenges/landing-page) - Diseño de una landing page con HTML y CSS.
-3. [Formulario de Contacto](/challenges/contact-form) - Formulario con validación nativa.
+1. [CV en HTML](challenges/single-page-cv) - Estructura básica de un CV usando solo HTML.
