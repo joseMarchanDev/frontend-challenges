@@ -5,3 +5,4 @@
 ## Lista de Retos
 
 1. [CV en HTML](https://github.com/joseMarchanDev/frontend-challenges/challenges/single-page-cv) - Estructura básica de un CV usando solo HTML. [(Enlace del reto original)](https://roadmap.sh/projects/single-page-cv)
+2. [HTML Only Portfolio](https://github.com/joseMarchanDev/frontend-challenges/challenges/basic-html-website) - Estructura básica de un portfolio usando solo HTML. [(Enlace del reto original)](https://roadmap.sh/projects/basic-html-website)
