@@ -17,7 +17,10 @@ Common breakpoints
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
     padding: .75rem 1.5rem;
 }
 
@@ -25,6 +28,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: .5rem;
 }
 
@@ -42,14 +46,16 @@ nav ul li a {
 main {
     display: grid;
     width: 100%;
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
+    text-align: center;
     grid-template-areas:
         "hero"
         "projects"
         "work-experience"
         "education"
         "teacher-reviews";
+    grid-gap: 1.5rem;
 }
 
 .hero {
@@ -68,32 +74,76 @@ main {
 .hero p {
     font-size: 1rem;
     font-weight: lighter;
-    color: #333;
+    color: #5e5e5e;
 }
 
 .projects {
     grid-area: projects;
+
+    .project {
+        padding: .75rem 0;
+    }
 }
 
 .work-experience {
     grid-area: work-experience;
+
+    .experience {
+        padding: .75rem 0;
+        text-align: left;
+    }
 }
 
 .education {
     grid-area: education;
+
+    p, ul {
+        padding: .75rem 0;
+    }
+}
+
+.education p,
+.education ul {
+    text-align: left;
 }
 
 .teacher-reviews {
     display: grid;
     grid-template-columns: 1fr;
     grid-area: teacher-reviews;
+
+    .review p:not(:first-of-type) {
+        color: #5e5e5e;
+    }
+
+    .review p:first-of-type {
+        margin-bottom: .5rem;
+    }
+
+    .review {
+        text-align: left;
+        padding: .75rem 0;
+    }
 }
 
-.teacher-reviews h2 {
-
+footer {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     main {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
@@ -101,10 +151,21 @@ main {
         "projects work-experience education"
         "teacher-reviews teacher-reviews teacher-reviews";
         ;
+        max-width: 1200px;
     }
 
     .hero {
         height: 450px;
+    }
+
+    .projects h2,
+    .project,
+    .work-experience h2,
+    .experience,
+    .education h2,
+    .review p:first-of-type{
+        margin-bottom: 1rem;
+        text-align: left;
     }
 
     .projects,
@@ -117,10 +178,19 @@ main {
 
     .teacher-reviews {
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
     }
 
     .teacher-reviews h2 {
         grid-column: 1 / span 3;
         margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
